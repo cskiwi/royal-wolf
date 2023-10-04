@@ -2,6 +2,9 @@
   "name": "@royal-wolf/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": ">=19"
+  },
   "scripts": {
     "start": "nx serve",
     "start:prod": "node dist/apps/server/main.js",
