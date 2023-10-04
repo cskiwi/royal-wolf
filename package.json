@@ -3,8 +3,23 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx start",
-    "build": "nx run-many --target=build --projects=client,server --parallel"
+    "start": "nx serve",
+    "start:prod": "node dist/apps/server/main.js",
+    "build": "nx run-many --target=build --projects=client,server --parallel",
+    "test": "ng test",
+    "lint": "nx workspace-lint && ng lint",
+    "e2e": "ng e2e",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected": "nx affected",
+    "format": "nx format:write",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "ng update @nrwl/workspace"
   },
   "private": true,
   "dependencies": {
